@@ -330,12 +330,13 @@ Prompt variants were compared across:
 
 ---
 
-## Screenshots (To Include)
+<!-- ## Screenshots (To Include)
 
 * Streamlit UI (input vs output)
 * MLflow run list
 * MLflow trace view (nested runs)
-* Metrics comparison charts
+* Metrics comparison charts -->
+
 
 ---
 
