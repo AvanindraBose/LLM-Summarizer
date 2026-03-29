@@ -1,8 +1,10 @@
 import mlflow
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
+BASE_DIR = os.getcwd()
+MLFLOW_DIR = os.path.join(BASE_DIR, "mlruns")
 
-mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+os.makedirs(MLFLOW_DIR, exist_ok=True)
+
+mlflow.set_tracking_uri("file:///" + MLFLOW_DIR.replace("\\", "/"))
 mlflow.set_experiment("llm_summarization")
