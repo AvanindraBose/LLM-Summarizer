@@ -1,0 +1,16 @@
+[project]
+name = "llm-summarizer"
+version = "0.1.0"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "streamlit",
+    "mlflow",
+    "python-dotenv",
+    "google-generativeai",
+    "pandas",
+    "spacy"
+]
+
+[tool.setuptools]
+packages = ["src", "app"]
